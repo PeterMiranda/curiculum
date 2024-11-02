@@ -1,126 +1,500 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap">
     <title>Peter Miranda - CV</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="style.css">
-    <style>
-        h2{
-            color: blue;
-        }
-    </style>
     <link rel="stylesheet" href="stylesheets/style.css">
 </head>
 
-<body>
-    <header>
-        <!-- 
-        <img src="resources/img/foto-perfil-generica.jpg" style="width: 200px; height: auto; border-radius: 50%;">
-        -->
-        <img id="photo" src="https://placehold.co/400x400" alt="photo" style="width: 200px; height: auto; border-radius: 50%;">
-        <h1 style="color: blue;">Peter Miranda</h1>
-        <p>Desarrollador</p>
-        <h2>Contacts</h2>
-        <form>
-            <ul>
-                <li><b>Correo Intitucional:</b> pemiplua@espol.edu.ec </li>
-                <li><b>Teléfono personal:</b> +593 98 131 8003 </li>
+<body id="home">
+    <header class="header">
+        <div class="container">
+            <ul class="social-media-home">
+                <li class="social-media">
+                    <a class="social-media-link" href="https://www.facebook.com/profile.php?id=100080138686261" target="_blank">
+                        <i class="fa-brands fa-facebook fa-2x" aria-hidden="true" style="color: white;"></i>
+                    </a>
+                </li>
+                <li class="social-media">
+                    <a class="social-media-link" href="https://www.instagram.com/spepe012/" target="_blank">
+                        <i class="fa-brands fa-instagram fa-2x" aria-hidden="true" style="color: white;"></i>
+                    </a>
+                </li>
+                <li class="social-media">
+                    <a class="social-media-link" href="#" target="_blank">
+                        <i class="fa-brands fa-telegram fa-2x" aria-hidden="true" style="color: white;"></i>
+                    </a>
+                </li>
+                <li class="social-media">
+                    <a class="social-media-link" href="https://www.linkedin.com/in/peter-miranda-pluas-480665213/" target="_blank">
+                        <i class="fa-brands fa-linkedin fa-2x" aria-hidden="true" style="color: white;"></i>
+                    </a>
+                </li>
+                <li class="social-media">
+                    <a class="social-media-link" href="https://github.com/" target="_blank">
+                        <i class="fa-brands fa-github fa-2x" aria-hidden="true" style="color: white;"></i>
+                    </a>
+                </li>
             </ul>
-        </form>
+        </div>
+        <div class="header-content">
+            <h4 class="header-subtitle">¡Hola Mundo!</h4>
+            <h1 class="header-title">Peter Miranda</h1>
+            <h6 class="header-sub-subtitle">Desarrollador</h6>
+        </div>
     </header>
 
-    <h2>Indice</h2>
-    <nav>
-        <ul>
-            <li><a href="#resumen">Introducción</a></li>
-            <li><a href="#experiencia">Experiencia</a></li>
-            <li><a href="#educacion">Educación</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-        </ul>
+    <nav class="navbar">
+        <div class="info">
+
+            <select class="nav-select" onchange="location = this.value;">
+                <option value="#home">Inicio</option>
+                <option value="#about">Sobre mí</option>
+                <option value="#resume">Introducción</option>
+                <option value="#experiencia">Experiencia</option>
+                <option value="#educacion">Educación</option>
+                <option value="#proyectos">Proyectos</option>
+            </select>
+
+
+            <ul class="navbar-menu">
+                <li class="nav-item"><a href="#home" class="nav-link active">Inicio</a></li>
+                <li class="nav-item"><a href="#about-section" class="nav-link active">Sobre mí</a></li>
+                <li class="nav-item"><a href="#experiencia-section" class="nav-link active">Experiencia</a></li>
+            </ul>
+            <ul class="navbar nav-bar-photo">
+                <img src="https://placehold.co/400x400" alt="Photo of Peter Miranda">
+            </ul>
+            <ul class="navbar-menu">
+                <li class="nav-item"><a href="#experiencia" class="nav-link active">Experiencia</a></li>
+                <li class="nav-item"><a href="#educacion" class="nav-link active">Educación</a></li>
+                <li class="nav-item"><a href="#proyectos" class="nav-link active">Proyectos</a></li>
+            </ul>
+        </div>
     </nav>
- 
-    <button>
-        <a href="www.google.com">Google</a>
-    </button>
 
-    <main>
-        <section id="resumen">
-            <h2>Introducción</h2>
-            <p>Esto debería ser un parrafo, pero no se que escribir ............................ </p>
-        </section>
-        <section id="experiencia">
-            <h2 class="subtitle">Experiencia</h2>
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th>Empresa</th>
-                        <th>Puesto</th>
-                        <th>Años de experiencia</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Acme Corporation</td>
-                        <td>Desarrollador web</td>
-                        <td>3</td>
-                    </tr>
-                </tbody>
-            </table>
-            <h3>Lenguajes y Herramientas</h3>
+    <div class="about-container">
+        <div id="about-section">
+            <div class="about-card">
+                <h3>¿Quién soy?</h3>
+                <h5>En este momento... Diseñador Web / Desarrollador Terrestre no IA (más o menos...)</h5>
+                <p>
+                    Desarrollador web principiante y diseñador gráfico frustrado, con una fuerte motivación por aprender y mejorar mis habilidades en la creación de sitios web y aplicaciones interactivas.
+                </p>
+            </div>
+
+
+            <div class="about-card">
+                <h3>Información personal</h3>
+                <ul>
+                    <li>
+                        Nacimiento: <span>12/07/2002</span>
+                    </li>
+                    <li>
+                        Email: <span>pemiplua@espol.edu.ec</span>
+                    </li>
+                    <li>
+                        Teléfono: <span>+594 98 131 8003</span>
+                    </li>
+                    <li>
+                        Dirección: <span>Vía a Daule</span> 
+                    </li>
+                </ul>
+                <ul class="social-media-home">
+                    <li class="social-media">
+                        <a class="social-media-link" href="https://www.facebook.com/profile.php?id=100080138686261" target="_blank">
+                            <i class="fa-brands fa-facebook fa-2x" aria-hidden="true" style="color: black;"></i>
+                        </a>
+                    </li>
+                    <li class="social-media">
+                        <a class="social-media-link" href="https://www.instagram.com/spepe012/" target="_blank">
+                            <i class="fa-brands fa-instagram fa-2x" aria-hidden="true" style="color: black;"></i>
+                        </a>
+                    </li>
+                    <li class="social-media">
+                        <a class="social-media-link" href="#" target="_blank">
+                            <i class="fa-brands fa-telegram fa-2x" aria-hidden="true" style="color: black;"></i>
+                        </a>
+                    </li>
+                    <li class="social-media">
+                        <a class="social-media-link" href="https://www.linkedin.com/in/peter-miranda-pluas-480665213/" target="_blank">
+                            <i class="fa-brands fa-linkedin fa-2x" aria-hidden="true" style="color: rgb(0, 0, 0);"></i>
+                        </a>
+                    </li>
+                    <li class="social-media">
+                        <a class="social-media-link" href="https://github.com/" target="_blank">
+                            <i class="fa-brands fa-github fa-2x" aria-hidden="true" style="color: black;"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="about-card">
+                <h3>My Expertise</h3>
+                <div class="row">
+                    <div class="col-1 text-danger pt-1"><i class="ti-widget icon-lg"></i></div>
+                    <div class="col-10 ml-auto mr-3">
+                        <h6>UX Design</h6>
+                        <p class="subtitle"> exercitat Repellendus,  corrupt.</p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 text-danger pt-1"><i class="ti-paint-bucket icon-lg"></i></div>
+                    <div class="col-10 ml-auto mr-3">
+                        <h6>Web Development</h6>
+                        <p class="subtitle">Lorem ipsum dolor sit consectetur.</p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 text-danger pt-1"><i class="ti-stats-up icon-lg"></i></div>
+                    <div class="col-10 ml-auto mr-3">
+                        <h6>Digital Marketing</h6>
+                        <p class="subtitle">voluptate commodi illo voluptatib.</p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>  
+        <div id="experiencia-section">
+            <section id="experiencia-card">
+                <h2 class="subtitle">Experiencia</h2>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Empresa</th>
+                            <th>Puesto</th>
+                            <th>Años de experiencia</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Acme Corporation</td>
+                            <td>Desarrollador web</td>
+                            <td>3</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3>Lenguajes y Herramientas</h3>
+                
+            </section>
+            <section id="educacion-card">
+                <h2 class="subtitle">Educación</h2>
+                <h6>2021 - Presente</h6>
+                <P>Ingieneria en Ciencias Computacionales - Escuela Superior Politécnica del Litoral</P>
+                <ul>
+                    <li>Programación Orienta a Objetos</li>
+                    <li>Estructura de Datos</li>
+                    <li>Sistema de Bases de datos</li>
+                    <li>Programación Orienta a objetos </li>
+                </ul>
+                <hr>
+                <h6>2014 - 2020</h6>
+                <P>Bachillerato General Unificado - Unidad Educatica Fiscal "Dolores Sucres"</P>
+                <hr>
+            </section>
+
+            <section id="habilidades-card">
+                <h2 class="subtitle">Habilidades</h2>
+                <div class="card-body">
             
-        </section>
-        <section id="educacion">
-            <h2 class="subtitle">Educación</h2>
-        </section>
-        <section id="habilidades">
-            <h2>Habilidades</h2>
-        </section>
-            <section id="proyectos">
-        <h2>Proyectos</h2>
-        </section>
-        
-        <section id="Contactame">
-            <h3>Contactame</h3>
-            <form>
-                <label for="nombre">Nombre Completo:</label>
-                <div>
-                    <input type="text" id="nombre" name="nombre" required>
+                    <div class="skill-item">
+                        <i class="fa-brands fa-python skill-icon" style="color: #3776AB;"></i>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+            
+                    <div class="skill-item">
+                        <i class="fa-brands fa-java skill-icon" style="color: #E11C1F;"></i>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 97%" aria-valuenow="97" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <i class="fa-brands fa-html5 skill-icon" style="color: #FF5722;"></i>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 97%" aria-valuenow="97" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+            
+                    <div class="skill-item">
+                        <i class="fa-brands fa-css3-alt skill-icon" style="color: #007BC9;"></i>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <i class="fa-brands fa-js skill-icon" style="color: #F78223;"></i>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+            
                 </div>
+            </section>
 
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="experiencia">Experiencia Laboral:</label>
-                <textarea id="experiencia" name="experiencia" rows="5" required></textarea>
-
-                <label for="educacion">Educación:</label>
-                <textarea id="educacion" name="educacion" rows="5"required></textarea>
-
-                <label>Habilidades Técnicas:</label><br>
-                <div>
-                    <input type="checkbox" name="habilidades" value="HTML"> <span>HTML</span>
-                </div>
-                
-                <input type="checkbox" name="habilidades" value="CSS"> CSS
-                <input type="checkbox" name="habilidades" value="JavaScript">
-                JavaScript
-                <label for="intereses">Intereses:</label>
-                <select id="intereses" name="intereses">
-                <option value="desarrollo">Desarrollo Web</option>
-                <option value="diseno">Diseño Gráfico</option>
-                <option value="marketing">Marketing Digital</option>
-                </select>
-                <button type="submit">Enviar</button>
-
-
-            </form>
-        </section>
-        
-
+                <section id="proyectos-card">
+            <h2 class="subtitle">Proyectos</h2>
+            </section>
+        </div>
     </main>
+
+    <section class="section-xd">
+        <div class="container">
+            <div class="row">
+                <div class="icon-container">
+                    <i class="fa-regular fa-clock"></i>
+                </div>
+                <div class="column">
+                    <h1 class="number">500</h1>
+                    <p class="description">Horas Trabajadas</p>
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="icon-container">
+                    <i class="fa-regular fa-square-check"></i>
+                </div>
+                <div class="column">
+                    <h1 class="number">10</h1>
+                    <p class="description">Proyectos Terminados</p> 
+                </div>    
+            </div>
+    
+            <div class="row">
+                <div class="icon-container">
+                    <i class="fa-regular fa-face-smile"></i>
+                </div>
+                <div class="column">
+                    <h1 class="number">0</h1>
+                    <p class="description">Clientes Felices</p>
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="icon-container">
+                    <i class="fa-solid fa-mug-hot"></i>
+                </div>
+                <div class="column">
+                    <h1 class="number">?</h1>
+                    <p class="description">Tazas de café bebidas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section-servicio">
+        <div class="container">
+            <h2>Mis Servicios</h2>
+            <div class="row">
+
+                <div class="card">
+                    <div class="card-header has-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Desarrollo de Software</h5>
+                        <P class="subtitle">Ofrezco servicios de desarrollo de software a medida, creando aplicaciones robustas y aproximadamente escalables que se adaptan a las necesidades específicas de los clientes. Utilizo metodologías medianamente ágiles para asegurar un proceso de desarrollo eficiente.</P>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header has-icon">
+                        <i class="fa-solid fa-window-maximize"></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Desarrollo Web</h5>
+                        <P class="subtitle">Me estoy especializando en diseño y desarrollo de sitios web intuitivos y responsivos. Utilizo tecnologías modernas para crear experiencias de usuario atractivas, optimizando el rendimiento y la accesibilidad en diferentes dispositivos (Aun estoy aprendiendo).</P>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header has-icon">
+                        <i class="fa-solid fa-chart-pie"></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Análisis de Datos</h5>
+                        <P class="subtitle"> Creación de scripts para recolectar, procesar y analizar datos e información valiosa. Proporciono herramientas de visualización estadística que ayudan al propietario a tomar decisiones basadas en datos.</P>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header has-icon">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Sistemas con Base de Datos</h5>
+                        <P class="subtitle">Desarrollo y gestiono sistemas de bases de datos para nada eficientes y seguros, intentando optimizar la estructura y el acceso a la información. Me aseguro de que los datos estén organizados y disponibles para análisis y consultas rápidas.</P>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header has-icon">
+                        <i class="fa-regular fa-circle-question"></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Consultoria Técnica</h5>
+                        <P class="subtitle">Ofrezco consultoría técnica para ayudar a las empresas a identificar y implementar las mejores soluciones tecnológicas. Asesoro en la arquitectura de software, la selección de tecnologías y la optimización de procesos (Aún no lo he hecho pero estoy listo para hacerlo...)</P>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header has-icon">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Mantenimiento y Soporte</h5>
+                        <P class="subtitle">Brindo servicios de mantenimiento y soporte para asegurar que las aplicaciones y sistemas funcionen de manera óptima. Actualizaciones, solución de problemas para maximizar la eficiencia.</P>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header has-icon">
+                        <i class="fa-solid fa-chalkboard-user"></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Entrenamiento y Capacitación</h5>
+                        <P class="subtitle">disponibles para dirigir talleres y capacitaciones sobre diversas tecnologías y lenguajes de programación.</P>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section-contratame">
+        <div>
+            <h2>Ahora estoy disponible para contratos!</h2>
+            <form>
+                <button href="#contactame" class="btn">Contratame</button>
+            </form>
+        </div>
+    </section>
+
+
+    <section class="section-portafolio" id="portafolio">
+        <div class="container">
+            <h2>Mi <span>Portafolio</span></h2>
+            <div class="row">
+                <div class="blog-card">
+                    <div class="img-holder">
+                        <img src="assets/imgs/blog1.jpg">
+                    </div>
+                    <div class="content-holder">
+                        <h6 class="title">Consectetur adipisicing elit</h6>
+
+                        <p class="post-details">
+                            <a href="#">By: Admin</a>
+                            <a href="#"><i class="ti-heart text-danger"></i> 234</a>
+                            <a href="#"><i class="ti-comment"></i> 123</a>
+                        </p>
+                        
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet nesciunt qui sit velit delectus voluptates, repellat ipsum culpa id deleniti. Rerum debitis facilis accusantium neque numquam mollitia modi quasi distinctio.</p>
+
+                        <p><b>Necessitatibus nihil impedit! Ex nisi eveniet, dolor aliquid consequuntur repudiandae.</b></p>
+                        <p>Magnam in repellat enim harum omnis aperiam! Explicabo illo, commodi, dolor blanditiis cupiditate harum nisi vero accusamus laudantium voluptatibus dolores quae obcaecati.</p>
+
+                        <a href="#" class="read-more">Read more <i class="ti-angle-double-right"></i></a>
+                    </div>
+                </div><!-- end of blog wrapper -->
+
+                <!-- blog-card -->
+                <div class="blog-card">
+                    <div class="img-holder">
+                        <img src="assets/imgs/blog2.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                    </div>
+                    <div class="content-holder">
+                        <h6 class="title">Explicabo illo</h6>
+
+                        <p class="post-details">
+                            <a href="#">By: Admin</a>
+                            <a href="#"><i class="ti-heart text-danger"></i> 456</a>
+                            <a href="#"><i class="ti-comment"></i> 264</a>
+                        </p>
+                        
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit excepturi laborum enim, vitae ipsam atque eum, ad iusto consequuntur voluptas, esse doloribus. Perferendis porro quisquam vitae exercitationem aliquid, minus eos laborum repudiandae, cumque debitis iusto omnis praesentium? Laborum placeat sit adipisci illum tempore maxime, esse qui quae? Molestias excepturi corporis similique doloribus. Esse vitae earum architecto nulla non dolores illum at perspiciatis quod, et deleniti cupiditate reiciendis harum facere, delectus eum commodi soluta distinctio sit repudiandae possimus sunt. Ipsum, rem.</p>
+
+                        <a href="#" class="read-more">Read more <i class="ti-angle-double-right"></i></a>
+                    </div>
+                </div><!-- end of blog wrapper -->
+                <!-- blog-card -->
+                <div class="blog-card">
+                    <div class="img-holder">
+                        <img src="assets/imgs/blog3.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                    </div>
+                    <div class="content-holder">
+                        <h4 class="title">Porro Quisqua</h4>
+
+                        <p class="post-details">
+                            <a href="#">By: Admin</a>
+                            <a href="#"><i class="ti-heart text-danger"></i> 431</a>
+                            <a href="#"><i class="ti-comment"></i> 312</a>
+                        </p>
+                        
+                        <p> consectetur adipisicing elit. Impedit excepturi laborum enim, vitae ipsam atque eum, ad iusto consequuntur voluptas, esse doloribus. Perferendis porro quisquam vitae exercitationem aliquid, minus eos laborum repudiandae, cumque debitis iusto omnis praesentium? Laborum placeat sit adipisci illum tempore maxime, esse qui quae? Molestias excepturi corporis similique doloribus. Esse vitae earum architecto nulla non dolores illum at perspiciatis quod, et deleniti cupiditate reiciendis harum facere, delectus eum commodi soluta distinctio sit repudiandae possimus sunt. Ipsum, rem.</p>
+
+                        <a href="#" class="read-more">Read more <i class="ti-angle-double-right"></i></a>
+                    </div>
+                </div><!-- end of blog wrapper -->
+
+            </div>
+        </div>
+    </section>
+    
+    
+    <section id="contactame" class="section-contactame">
+        <h3>Contactame</h3>
+        <form>
+            <label for="nombre">Nombre Completo:</label>
+            <div>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="experiencia">Experiencia Laboral:</label>
+            <textarea id="experiencia" name="experiencia" rows="5" required></textarea>
+
+            <label for="educacion">Educación:</label>
+            <textarea id="educacion" name="educacion" rows="5"required></textarea>
+
+            <label>Habilidades Técnicas:</label><br>
+            <div>
+                <input type="checkbox" name="habilidades" value="HTML"> <span>HTML</span>
+            </div>
+            
+            <input type="checkbox" name="habilidades" value="CSS"> CSS
+            <input type="checkbox" name="habilidades" value="JavaScript">
+            JavaScript
+            <label for="intereses">Intereses:</label>
+            <select id="intereses" name="intereses">
+            <option value="desarrollo">Desarrollo Web</option>
+            <option value="diseno">Diseño Gráfico</option>
+            <option value="marketing">Marketing Digital</option>
+            </select>
+            <button type="submit">Enviar</button>
+
+
+        </form>
+    </section>
+
+
+<!--
     <footer>
         <p>© Peter Miranda - 2024</p>
         <ul>
@@ -128,5 +502,7 @@
             <li><a href="https://github.com/PeterMiranda">GitHub</a></li>
         </ul>
     </footer>
-
+-->
 </body>
+
+
